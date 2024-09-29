@@ -1,0 +1,76 @@
+#include <iostream>
+using namespace std;
+
+//加法运算函数
+int add_function(int a,int b)
+{
+    cout << a + b;
+    return 0;
+}
+
+//减法运算函数
+int minus_function(int a,int b)
+{
+    cout << a - b;
+    return 0;
+}
+
+//乘法运算函数
+int times_function(int a,int b)
+{
+    cout << a * b;
+    return 0;
+}
+
+//除法运算函数
+int type_function(int a,int b)
+{
+    cout << a / b;
+    return 0;
+}
+
+//计算器函数
+int calculator()
+{
+    //声明变量
+    int a,b;
+    char op;
+
+    //读取输入值
+    cin >> a >> op >> b;
+    
+    //判断运算方式
+    if (op == '+')
+    {
+        add_function(a,b);
+        return 0;
+    }
+    else if (op == '-')
+    {
+        minus_function(a,b);
+        return 0;
+    }
+    else if (op == '*')
+    {
+        times_function(a,b);
+        return 0;
+    }
+    else if (op == '/')
+    {
+        type_function(a,b);
+        return 0;
+    }
+    else
+    {
+        return 0;
+    }
+    return 0;
+}
+
+//主函数
+int main()
+{
+    //调用计算器函数
+    calculator();
+    return 0;
+}
